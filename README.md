@@ -2,11 +2,7 @@
 
 *Dart utilities for JSON serialisation & deserialisation.*
 
-- [ ] Review for inspiration:
-
-  - [json_utilities | Flutter Package](https://pub.dev/packages/json_utilities)
-  - [leafpetersen/cast: Dart library for type schemas for casting and parsing structured data](https://github.com/leafpetersen/cast)
-    - With this we could provide a declarative method for the complex casting involved in JSON deserialisation
+[Project Notes](https://www.notion.so/enspyrco/json_utils-53384161b9dd4d06b399b7776cdb9f80)
 
 ## Features
 
