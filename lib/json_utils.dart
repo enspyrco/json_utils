@@ -6,3 +6,13 @@ library json_utils;
 typedef JsonMap = Map<String, dynamic>;
 typedef JsonList = List<dynamic>;
 typedef Json = dynamic;
+
+class MalformedJsonException implements Exception {
+  MalformedJsonException(this.message, this.json);
+
+  final String message;
+  final JsonMap json;
+
+  @override
+  String toString() => message;
+}
