@@ -16,3 +16,22 @@ class MalformedJsonException implements Exception {
   @override
   String toString() => message;
 }
+
+class MalformedJsonMapException implements Exception {
+  MalformedJsonMapException(this.expected, this.json);
+
+  final Map<String, Type> expected;
+  final JsonMap json;
+
+  @override
+  String toString() {
+    String s = '';
+    for (String key in json.keys) {
+      if (json[key].runtimeType != expected[key]) {
+        s += '$key should be ${expected[key]} but was ${json[key].runtimeType}';
+      }
+    }
+
+    return s;
+  }
+}
