@@ -3,6 +3,8 @@
 /// packages defining the same type.
 library json_utils;
 
+typedef Nullable<T> = T?;
+
 typedef JsonMap = Map<String, dynamic>;
 typedef JsonList = List<dynamic>;
 typedef Json = dynamic;
