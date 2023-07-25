@@ -28,7 +28,8 @@ class MalformedJsonMapException implements Exception {
     String s = '';
     for (String key in json.keys) {
       if (json[key].runtimeType != expected[key]) {
-        s += '$key should be ${expected[key]} but was ${json[key].runtimeType}';
+        s +=
+            '$key should be ${expected[key]} but was ${json[key].runtimeType}\n';
       }
     }
 
