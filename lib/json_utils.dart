@@ -3,11 +3,12 @@
 /// packages defining the same type.
 library json_utils;
 
+// Get a nullable type object, idea taken from https://github.com/dart-lang/sdk/issues/48856
 typedef Nullable<T> = T?;
 
-typedef JsonMap = Map<String, dynamic>;
-typedef JsonList = List<dynamic>;
-typedef Json = dynamic;
+typedef JsonMap = Map<String, Object?>;
+typedef JsonList = List<Object?>;
+typedef Json = Object?;
 
 class MalformedJsonException implements Exception {
   MalformedJsonException(this.message, this.json);
