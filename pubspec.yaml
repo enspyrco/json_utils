@@ -3,8 +3,9 @@ description: Dart utilities for JSON serialisation & deserialisation.
 version: 0.0.0-a1
 
 environment:
-  sdk: '>=3.0.1 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dev_dependencies:
-  enspyr_lints: ^0.0.0-a1
+  enspyr_lints:
+    git: https://github.com/enspyrco/enspyr_lints
   test: ^1.24.3
